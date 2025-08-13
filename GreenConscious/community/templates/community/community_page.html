@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block title %}Discussion{% endblock %}
+
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'MainPage/style.css' %}">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .header, .main, .post-list, .post-item {
+            width: 100%;
+        }
+
+        .post-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .heading {
+            color: #4CAF50;
+            font-family: "Eras Medium ITC", sans-serif;
+            font-size: 33px !important;
+            font-weight: bolder;
+            padding: 20px 20px 0 !important;
+        }
+
+        .no-events-message {
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+            color: #999;
+        }
+
+        .community_posts {
+            background-color: white;
+            /*border: 1px solid #ddd;*/
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1000px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+    </style>
+{% endblock %}
+
+{% block navbar-content %}
+    <a href="{% url 'MainPage:main_page' %}">
+        <div class="name">Green Conscious</div>
+    </a>
+    {% if userLoggedIn %}
+        <div class="login-register">
+            <a href="{% url 'create_post' %}">
+                <button>Create Post</button>
+            </a>
+            <a href="{% url 'MainPage:main_page' %}">
+                <button>Home</button>
+            </a>
+        </div>
+    {% else %}
+        <div class="login-register">
+            <a href="{% url 'Login_SignUp:loginPage' %}">
+                <button>Log In</button>
+            </a>
+            <a href="{% url 'Login_SignUp:signupPage' %}">
+                <button>Sign Up</button>
+            </a>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <header class="header">
+            <br>
+            <div style="padding: 0 33px"><h1 class="heading">Discussion</h1></div>
+        </header>
+        <main class="main">
+            {% if posts %}
+                <!--<h2>Posts:</h2>-->
+                {% for post in posts %}
+                    <div class="community_posts">
+                        <article class="post">
+                            <header class="post-header">
+                                <h3 class="event_title">{{ post.title }}</h3>
+                            </header>
+                            <section class="post-content">
+                                <p>{{ post.content }}</p>
+                            </section>
+                            <div class="post-footer">
+                                <p><strong>Author:</strong> {{ post.author.username }}</p>
+                                <p><strong>Created At:</strong> {{ post.created_at }}</p>
+                            </div>
+                        </article>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p class="no-events-message">No posts so far!</p>
+            {% endif %}
+        </main>
+    </div>
+{% endblock %}

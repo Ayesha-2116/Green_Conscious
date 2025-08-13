@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+{% block title %}Create Post{% endblock %}
+
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'MainPage/style.css' %}">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .header, .main, .form {
+            width: 100%;
+        }
+
+        .form {
+            margin-bottom: 20px;
+        }
+
+        .form p {
+            margin-bottom: 15px;
+        }
+
+        .form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form input, .form textarea, .form select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+        }
+
+        .form button:hover {
+            background-color: white;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+        }
+
+        .heading {
+            color: #4CAF50;
+            font-family: "Eras Medium ITC", sans-serif;
+            font-size: 33px !important;
+            font-weight: bolder;
+            padding: 20px 20px 0 !important;
+        }
+
+        form {
+            padding: 10px 20px !important;
+        }
+
+        .back_button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+        }
+
+        .back_button:hover {
+            background-color: white;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+        }
+
+        .create_post_form {
+            background-color: #f9f9f9;
+            /*border: 1px solid #ddd;*/
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 60px !important;
+            width: 100%;
+            max-width: 1000px !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+    </style>
+{% endblock %}
+
+{% block navbar-content %}
+    <a href="{% url 'MainPage:main_page' %}">
+        <div class="name">Green Conscious</div>
+    </a>
+    <div class="login-register">
+        <a href="{% url 'Login_SignUp:profile_view' %}">
+            <button>My Profile</button>
+        </a>
+        <a href="{% url 'MainPage:main_page' %}">
+            <button>Home</button>
+        </a>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container create_post_form">
+        <header class="header">
+            <h1 class="heading">Create Post</h1>
+        </header>
+        <main class="main">
+            <form method="post" class="form">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a href="{% url 'community_page' %}" class="btn btn-secondary back_button">Back to Community
+                    Page</a>
+            </form>
+
+        </main>
+    </div>
+{% endblock %}

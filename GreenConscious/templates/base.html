@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Green Conscious
+        {% endblock %}
+    </title>
+
+    <!-- Link CSS file -->
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+    <!-- Block for additional CSS files -->
+    {% block extra_css %}{% endblock %}
+    {% block extra_js %}{% endblock %}
+
+</head>
+
+<body>
+<!-- Navbar -->
+<div class="navbar text_navbar">
+    {% block navbar-content %}
+        Content for nav-bar based on login/logout
+    {% endblock %}
+</div>
+
+<!-- Content area -->
+<div class="content">
+    {% block content %}
+        Replace Content Here
+    {% endblock %}
+</div>
+<!--<hr style="height:6px;border-width:0;color:green;background-color:green">-->
+<!-- Footer -->
+<footer class="footer mt-auto py-3">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <span class="footer_title">Green Conscious</span>
+                <span class="footer_sub_title">Sustainability for All</span>
+            </div>
+            <div class="footer_content col-md-4">
+                <span>Sections</span>
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'MainPage:main_page' %}">Home</a></li>
+                    <li><a href="{% url 'EventsPage:event_creation' %}">Event Creation</a></li>
+                </ul>
+            </div>
+            <div class="footer_content col-md-4">
+                <span>Company</span>
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'contact_form' %}">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+           </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

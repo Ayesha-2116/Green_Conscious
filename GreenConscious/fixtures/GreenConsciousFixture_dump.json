@@ -1,0 +1,564 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$mpWlKfsh5lZj4jiMJ2ve4r$NQpWOcKUV4sfOT88ilukcmWSZamVwtkuNqYe1+VN1xE=",
+    "last_login": "2024-07-26T23:42:07.671Z",
+    "is_superuser": true,
+    "username": "busam",
+    "first_name": "Gireesh Chandra",
+    "last_name": "Busam",
+    "email": "busam@uwindsor.ca",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-06-30T18:18:05.033Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$IBcw9vkB6MPYFRg0jmnhcF$jItmNBtU7FVGpWA7iLnXAOtkQ+XXs3JLrgHg+ZZ7Smo=",
+    "last_login": "2024-07-26T23:41:55.521Z",
+    "is_superuser": false,
+    "username": "gireesh",
+    "first_name": "",
+    "last_name": "",
+    "email": "busam@uwindsor.ca",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-07-15T16:57:41.561Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$CX4hGHfbHkEJeLSxVt1FSM$qoSzqWxHCiBHQQWq1bINZ1WRmjDoMDhfL4NSMyFE1jI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "gireeshbusam",
+    "first_name": "",
+    "last_name": "",
+    "email": "busam@uwindsor.ca",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-07-20T19:16:44.597Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1g32dviv0c2fjcv4ksf1ljo0bslnzk3z",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyELFNd69N5vIAu7SNXQpLQn47_bJj3oaZJ5b-atAq1LCWuTOYysrsqp028XKT2l7oAfVO-TTlNd5jHqXdEHbXqYWF63w_07KNTKtvaRup4YiU0GRjxn7LwIuuS3yHSxhJAM9uBi9g4jWw8gQB7Johj1-QL-JTgr:1sTmXu:RIVZISj1ZIrE2LtNMslY66b8fy5WA5gGOVeHyI65x3w",
+    "expire_date": "2024-07-30T18:05:02.175Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1lzl9pgyg881sis3lq2nz2neupkytv8u",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8ebo4UhJLEktycxNnYLEnDzFmYv9Bbswr4o0h9WjKa1Tgqa0TenhjU8sLcmIB5uQmTKlh9FwSo8QklhSYnJ2ah5QQjMlKzEvPV8vOT-vpCgzSQ-kRA8qW6znm5-SmuMEU8uPZEBGYnHGlB4HS1OzNBOzxGRjI3OjpGSDZHPzpEQDE3PjRLMUUzOD1FQTCzOLFHMzC9MU82TjZENDC-PUJMPEJEvzNOOUJIOU1CmlegA03Fbc:1sUrWt:AIuwYr5fZdreH50UdshbZw56D-0gYaqMxsRAAcmvlOs",
+    "expire_date": "2024-08-02T17:36:27.549Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "353yzmqf2qk6uc8slhuifsei9zian7m6",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8Rbu4UhJLEktycxNnYLEnDzFmYv9BbuYICsXX2fVlNYpQVPapvTwxieWlmTEg03ITJnSw2g4pUcISSwpMTk7NQ8ooZmSlZiXnq-XnJ9XUpSZpAdSogeVLdbzzU9JzXGCqeVHMiAjsThjSo-DpalZmolZYrKxkblRUrJBsrl5UqKBiblxolmKqZlBaqqJhZlFirmZhWmKebJxsqGhhXFqkmFikqV5mnFKkkFK6pRSPQATxlar:1sW0DW:OH2qJFiU4Z1amKh-BfJ8ireN54bAFtYwnQ95xFAZges",
+    "expire_date": "2024-08-05T21:05:10.957Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7t4vrkxoyfx2dp6ddrchtooj4cu0ptuy",
+  "fields": {
+    "session_data": ".eJxNjE0KwjAQRnXhUgRPoZuQNG0m3Yl7z1AmmaltlRb6sxQ8QJbxHF5RRYV-y_ce3331eC6-u8VdWBc4jVUxDdwXNcWwVDFsZ8yhv3D7FntqsD13wnft2NdOfBLxs4M4dcTX47_dzA4qHKoYDnlmytSg1wkkzksP4FCmoNFQZiRzao0lMDYj8NorZTU7hS6HUpOTxHESL-uOP20:1sXUZb:EWXeYlJcYWYh7h_LR1coJcyyNC_Eq1hbdhQk73QHxpM",
+    "expire_date": "2024-08-09T23:42:07.745Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "8wbzdhpaysnavvnogol6oelz71dy4xwg",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8ebo4UhJLEktycxNnYLEnDzFmYv9BbuYqDQD72P3Ka1Tgqa0TenhjU8sLcmIB5uQmTKlh9FwSo8QklhSYnJ2ah5QQjMlKzEvPV8vOT-vpCgzSQ-kRA8qW6znm5-SmuMEU8uPZEBGYnHGlB4HS1OzNBOzxGRjI3OjpGSDZHPzpEQDE3PjRLMUUzOD1FQTCzOLFHMzC9MU82TjZENDC-PUJMPEJEvzNOOUJIOU1CmlegAxHFbW:1sW4Iu:wmgdtT8cRoZ1h4PebnvGlFiCM4ymoDhrnJdO8wVEb3c",
+    "expire_date": "2024-08-06T01:27:00.925Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "c77aknlbtt5f5n3ynit4sqps0d5sq1h7",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8Rbr4UhJLEktycxNnYLEnDzFmYv9BbuIqKIhSwPTlNYpQVPapvTwxieWlmTEg03ITJnSw2g4pUcISSwpMTk7NQ8ooZmSlZiXnq-XnJ9XUpSZpAdSogeVLdbzzU9JzXGCqeVHMiAjsThjSo-DpalZmolZYrKxkblRUrJBsrl5UqKBiblxolmKqZlBaqqJhZlFirmZhWmKebJxsqGhhXFqkmFikqV5mnFKkkFK6pRSPQDl11Zo:1sVLSP:dzZUMbkxrdUfyY7hs6a-EW0O_sSlquL4MKmDnJFQoQo",
+    "expire_date": "2024-08-04T01:33:49.297Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "cnhqc4wtml2aurj253z577cm9lnqlv02",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sNz86:2qTUhBy77rZXudWBTWbLTNFymDBDdncyrmqPcMm7VA0",
+    "expire_date": "2024-07-14T18:18:26.206Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "d69npcaa93uh3f1o7r4ler952hc3t9pr",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyELFNd69N5vIAu7SNXQpLQn47_bJj3oaZJ5b-atAq1LCWuTOYysrsqp028XKT2l7oAfVO-TTlNd5jHqXdEHbXqYWF63w_07KNTKtvaRup4YiU0GRjxn7LwIuuS3yHSxhJAM9uBi9g4jWw8gQB7Johj1-QL-JTgr:1sTnPk:MkJDmzcEk316_3qmovWuLtl8T3VNR6MghLOE5yPbR7k",
+    "expire_date": "2024-07-30T19:00:40.091Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "d6rk6t8amovj81igv8vk1nkvobwm6e20",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8Wbr4UhJLEktycxNnYLEnDzFmYv9BbuIqAwLt_usKa1Tgqa0TenhjU8sLcmIB5uQmTKlh9FwSo8QklhSYnJ2ah5QQjMlKzEvPV8vOT-vpCgzSQ-kRA8qW6znm5-SmuMEU8uPZEBGYnHGlB4HS1OzNBOzxGRjI3OjpGSDZHPzpEQDE3PjRLMUUzOD1FQTCzOLFHMzC9MU82TjZENDC-PUJMPEJEvzNOOUJIOU1CmlegD8IVaM:1sVLMq:POIOnAFcAeR4t8ArK7ME7CO9_kqwAoDhzHOnsLyFeLA",
+    "expire_date": "2024-08-04T01:28:04.751Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "e96vyelpg148zqqgcald06nnrkueo3ye",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sTP4r:BgB0yw-RGR_w38dmv9odPlRnWHelCL4HFTLwc-nGG4A",
+    "expire_date": "2024-07-29T17:01:29.581Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "evv2fg3zv5subkjgujukalv15zsmb26b",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8Zbr4UhJLEktycxNnYLEnDzFmYv9BbsIvxUHQ4rllNYpQVPapvTwxieWlmTEg03ITJnSw2g4pUcISSwpMTk7NQ8ooZmSlZiXnq-XnJ9XUpSZpAdSogeVLdbzzU9JzXGCqeVHMiAjsThjSo-DpalZmolZYrKxkblRUrJBsrl5UqKBiblxolmKqZlBaqqJhZlFirmZhWmKebJxsqGhhXFqkmFikqV5mnFKkkFK6pRSPQDs8lZx:1sVGDY:zptGfYTzDwmJXQEl7bKZtswkidA2DtarO91EXZQNU2E",
+    "expire_date": "2024-08-03T19:58:08.028Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "hzi5qn0w6qau3jgv9mo4tvcqk7uc7ia8",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sTPzW:HJCfCNT_NPEQ9IflI8mUQUdic3_hVpcW173fXweW3pU",
+    "expire_date": "2024-07-29T18:00:02.047Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "k18tdj7clndou9l18j3rcs87gdf2nlpv",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8ebs4UhJLEktycxNnYLEnDzFmYv9BbuYsLEsz6vAKa1Tgqa0TenhjU8sLcmIB5uQmTKlh9FwSo8QklhSYnJ2ah5QQjMlKzEvPV8vOT-vpCgzSQ-kRA8qW6znm5-SmuMEU8uPZEBGYnHGlB4HS1OzNBOzxGRjI3OjpGSDZHPzpEQDE3PjRLMUUzOD1FQTCzOLFHMzC9MU82TjZENDC-PUJMPEJEvzNOOUJIOU1CmlegBhwlca:1sW2oT:l8PYFiQbaZaA9UQqIS1Xknkztj0iEEf4r1HHLtwjfco",
+    "expire_date": "2024-08-05T23:51:29.864Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kdwhmqr5ad1ly32zj24t309lz3zs48g1",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sTm6X:SRJLEvEz1zcDMVGM7TGRQUD_-NzA-rGYhbuuQyTJPS8",
+    "expire_date": "2024-07-30T17:36:45.759Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lk3l176uihq3t7yjys6auts73e8mlldj",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8Rbq4UhJLEktycxNnYLEnDzFmYv9BbsIv7IS8y-lKa1Tgqa0TenhjU8sLcmIB5uQmTKlh9FwSo8QklhSYnJ2ah5QQjMlKzEvPV8vOT-vpCgzSQ-kRA8qW6znm5-SmuMEU8uPZEBGYnHGlB4HS1OzNBOzxGRjI3OjpGSDZHPzpEQDE3PjRLMUUzOD1FQTCzOLFHMzC9MU82TjZENDC-PUJMPEJEvzNOOUJIOU1CmlegBA81bq:1sVFri:0NZds0MVJHSqbm-xoKlAwTlSEKEiBZEXL-adPVRun6M",
+    "expire_date": "2024-08-03T19:35:34.264Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lyeug2d7k1ja1ksbljik1m12i36g97fx",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8ebq4UhJLEktycxNnYLEnDzFmYv9BbsIvzoz-4c7U1qnBE1pm9LDG59YWpIRDzYhM2VKD6PhlB4hJLGkxOTs1DyghGZKVmJeer5ecn5eSVFmkh5IiR5UtljPNz8lNccJppYfyYCMxOKMKT0OlqZmaSZmicnGRuZGSckGyebmSYkGJubGiWYppmYGqakmFmYWKeZmFqYp5snGyYaGFsapSYaJSZbmacYpSQYpqVNK9QCleFd7:1sVFv5:SOLkDv4iSqyJj07N6cZXbentgiHmf-gLjWvvtFfOx0o",
+    "expire_date": "2024-08-03T19:39:03.524Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "nzm06hctfp3vjs7fjt0p4tqtkmc6dhfe",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8Zbv4UhJLEktycxNnYLEnDzFmYv9BbswnyofjwHblNYpQVPapvTwxieWlmTEg03ITJnSw2g4pUcISSwpMTk7NQ8ooZmSlZiXnq-XnJ9XUpSZpAdSogeVLdbzzU9JzXGCqeVHMiAjsThjSo-DpalZmolZYrKxkblRUrJBsrl5UqKBiblxolmKqZlBaqqJhZlFirmZhWmKebJxsqGhhXFqkmFikqV5mnFKkkFK6pRSPQChcVYG:1sUsTi:6W5O-byi23fgY06vJnUw6DiX3Op7gW04VA1FUIkkPMk",
+    "expire_date": "2024-08-02T18:37:14.802Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "o4ft5i3b4bf19vxu62m55tocok37dbjq",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sQvzU:WX56OrUJBANnU5JtsyGBe7b-wR-_AHBCSjSw6YOEWLI",
+    "expire_date": "2024-07-22T21:33:44.038Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "oaeie3y1nruiwfyukioclpp7ezdumjhj",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sRXNb:qW37r6X6H0Rst0X96Mo-yPeft9kqFqrH2P4MpoqoVf8",
+    "expire_date": "2024-07-24T13:29:07.740Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "p6r8j2wryfoij5rvfl8kozqjo5jbqaja",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8Rbo4UhJLEktycxNnYLEnDzFmYv9BbuYsKIGq-PsKa1Tgqa0TenhjU8sLcmIB5uQmTKlh9FwSo8QklhSYnJ2ah5QQjMlKzEvPV8vOT-vpCgzSQ-kRA8qW6znm5-SmuMEU8uPZEBGYnHGlB4HS1OzNBOzxGRjI3OjpGSDZHPzpEQDE3PjRLMUUzOD1FQTCzOLFHMzC9MU82TjZENDC-PUJMPEJEvzNOOUJIOU1CmlegAaKFa0:1sW2XE:ZP8rPqTMq8gNBIbKGIhHBi2l7MPwjnlRwI4qs1IyyDg",
+    "expire_date": "2024-08-05T23:33:40.349Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "r010q14qa89kj5fgolzbmz99o53rkyx9",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sTuFT:aoo5nhTQMdGKqbQc0r5k39EFFYySB_9Hx2qseykZ7D8",
+    "expire_date": "2024-07-31T02:18:31.112Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "sjnww3h85ona2fqd3gquwcn9ffhox7qh",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8ebr4UhJLEktycxNnYLEnDzFmYv9BbswH4MM1-stU1qnBE1pm9LDG59YWpIRDzYhM2VKD6PhlB4hJLGkxOTs1DyghGZKVmJeer5ecn5eSVFmkh5IiR5UtljPNz8lNccJppYfyYCMxOKMKT0OlqZmaSZmicnGRuZGSckGyebmSYkGJubGiWYppmYGqakmFmYWKeZmFqYp5snGyYaGFsapSYaJSZbmacYpSQYpqVNK9QB_tVdF:1sUru8:DtxwyC-EzMCKg9YFcV35gai0ljPOmeVGdm5GDCZfE1I",
+    "expire_date": "2024-08-02T18:00:28.719Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "sm9pke5tjrfayhwfzha3vwhfttpzrgup",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8Zbu4UhJLEktycxNnYLEnDzFmYv9Bbswrygzb_DUKa1Tgqa0TenhjU8sLcmIB5uQmTKlh9FwSo8QklhSYnJ2ah5QQjMlKzEvPV8vOT-vpCgzSQ-kRA8qW6znm5-SmuMEU8uPZEBGYnHGlB4HS1OzNBOzxGRjI3OjpGSDZHPzpEQDE3PjRLMUUzOD1FQTCzOLFHMzC9MU82TjZENDC-PUJMPEJEvzNOOUJIOU1CmlegAIC1aZ:1sUrHz:pUBcYxfvTs1WOBHJQpQriw1XHHtxQL7fQhDbdbtU-Tk",
+    "expire_date": "2024-08-02T17:21:03.876Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "u08gnuotrmqf76nov2s25cdu1o6mbz05",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8ebq4UhJLEktycxNnYLEnDzFmYv9Bbswr64oY9GBKa1Tgqa0TenhjU8sLcmIB5uQmTKlh9FwSo8QklhSYnJ2ah5QQjMlKzEvPV8vOT-vpCgzSQ-kRA8qW6znm5-SmuMEU8uPZEBGYnHGlB4HS1OzNBOzxGRjI3OjpGSDZHPzpEQDE3PjRLMUUzOD1FQTCzOLFHMzC9MU82TjZENDC-PUJMPEJEvzNOOUJIOU1CmlegBDcFbw:1sUrfV:iXKZVTVTNdWbMMFCmxtxE5CN8nyEcmWWSTRJa_s20LY",
+    "expire_date": "2024-08-02T17:45:21.097Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wsv0lkg3kjfnuujkjqis8v87cxwr22qu",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8S7u4UhJLEktycxNnYLEnDzFmYv9BbuIqKI-69JbU1qnBE1pm9LDG59YWpIRDzYhM2VKD6PhlB4hJLGkxOTs1DyghGZKVmJeer5ecn5eSVFmkh5IiR5UtljPNz8lNccJppYfyYCMxOKMKT0OlqZmaSZmicnGRuZGSckGyebmSYkGJubGiWYppmYGqakmFmYWKeZmFqYp5snGyYaGFsapSYaJSZbmacYpSQYpqVNK9QDlr1fB:1sVLSN:NBbX2Os3SlfZWkv5okgMcJEPg7MCQCHvn1SIR7B8rmY",
+    "expire_date": "2024-08-04T01:33:47.379Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "x47wefvilddtvvmdp8cq48wc2rysfce2",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8Vbq4UhJLEktycxNnYLEnDzFmYv9BbuIqLggy5pFU1qnBE1pm9LDG59YWpIRDzYhM2VKD6PhlB4hJLGkxOTs1DyghGZKVmJeer5ecn5eSVFmkh5IiR5UtljPNz8lNccJppYfyYCMxOKMKT0OlqZmaSZmicnGRuZGSckGyebmSYkGJubGiWYppmYGqakmFmYWKeZmFqYp5snGyYaGFsapSYaJSZbmacYpSQYpqVNK9QBhklcW:1sVLID:Eua-GuVxF6vp1ZEx2jEQVm4Pjhs8zjsK9mNAmvO2a5c",
+    "expire_date": "2024-08-04T01:23:17.310Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "x5qp2e1mfd25orx4yt8r5zjnmy0i5rqo",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyELFNd69N5vIAu7SNXQpLQn47_bJj3oaZJ5b-atAq1LCWuTOYysrsqp028XKT2l7oAfVO-TTlNd5jHqXdEHbXqYWF63w_07KNTKtvaRup4YiU0GRjxn7LwIuuS3yHSxhJAM9uBi9g4jWw8gQB7Johj1-QL-JTgr:1sTuEj:UElrORfQrAVHv-zNbSsIafOfMPb-hx7V9nX2NcPnWbk",
+    "expire_date": "2024-07-31T02:17:45.357Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xcg6wb5bksoi2u3fd0gkstgaf1numljf",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sTP8i:y03UEIroO9TzvYcKNthTaNLtXhiqcq5lFHPZOYeNFE4",
+    "expire_date": "2024-07-29T17:05:28.059Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xzx0w29gzy6hos98kf3ypw2lkzmr7kyq",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8ebs4UhJLEktycxNnYLEnDzFmYv9Bbswn7wcy-ZjU1qnBE1pm9LDG59YWpIRDzYhM2VKD6PhlB4hJLGkxOTs1DyghGZKVmJeer5ecn5eSVFmkh5IiR5UtljPNz8lNccJppYfyYCMxOKMKT0OlqZmaSZmicnGRuZGSckGyebmSYkGJubGiWYppmYGqakmFmYWKeZmFqYp5snGyYaGFsapSYaJSZbmacYpSQYpqVNK9QBz_1c1:1sUsOA:WynDC8xM-_gBlEb5TuwhflCjUVqpGI1Lkj34sWqrFl4",
+    "expire_date": "2024-08-02T18:31:30.311Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ye81zx4io5jmf29shw0tp2fdjedys0ww",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sTPgf:cvWEHCFpODVKWeBIgpzOhAl9rwohcthNRKy1iSsBdjQ",
+    "expire_date": "2024-07-29T17:40:33.549Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "zlrnkn2qv5b1na7iphxbqj0x8khe0umm",
+  "fields": {
+    "session_data": ".eJxrYJ36mgECaqdo9PCUFqcWxWdkFpfkF1VO8Tbt4UhJLEktycxNnYLEnDzFmYv9BbuYuJUl7-nwKa1Tgqa0TenhjU8sLcmIB5uQmTKlh9FwSo8QklhSYnJ2ah5QQjMlKzEvPV8vOT-vpCgzSQ-kRA8qW6znm5-SmuMEU8uPZEBGYnHGlB4HS1OzNBOzxGRjI3OjpGSDZHPzpEQDE3PjRLMUUzOD1FQTCzOLFHMzC9MU82TjZENDC-PUJMPEJEvzNOOUJIOU1CmlegCR1VdV:1sW6fx:vsESk9iB814LNlWiuL5L02pvLKwLd1fpji7BhxiAvfw",
+    "expire_date": "2024-08-06T03:58:57.910Z"
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 29,
+  "fields": {
+    "name": "Testing event",
+    "start_date": "2024-06-01",
+    "end_date": "2024-07-01",
+    "description": "Testing Description",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "",
+    "location": "Toronto",
+    "category": 5
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 30,
+  "fields": {
+    "name": "Testing_event_2",
+    "start_date": "2024-10-20",
+    "end_date": "2024-11-01",
+    "description": "testing description",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "",
+    "location": "Ottawa",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 31,
+  "fields": {
+    "name": "testing_event_3",
+    "start_date": "2024-11-20",
+    "end_date": "2024-11-30",
+    "description": "testing_description_3",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "",
+    "location": "Windsor, Ontario",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 33,
+  "fields": {
+    "name": "lorem ipsum_edited",
+    "start_date": "2024-07-23",
+    "end_date": "2024-10-01",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "created_by": [
+      "busam"
+    ],
+    "image": "event_images/detective.png",
+    "location": "Windsor, Ontario",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 34,
+  "fields": {
+    "name": "Testing_event_creation",
+    "start_date": "2024-07-23",
+    "end_date": "2024-07-25",
+    "description": "testing_description",
+    "created_by": [
+      "busam"
+    ],
+    "image": "",
+    "location": "Windsor, ON",
+    "category": 5
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 1,
+  "fields": {
+    "name": "Green Living"
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 2,
+  "fields": {
+    "name": "Climate Change"
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 3,
+  "fields": {
+    "name": "Wildlife Protection"
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 4,
+  "fields": {
+    "name": "Tree Plantation"
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 5,
+  "fields": {
+    "name": "Renewable Energy"
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 6,
+  "fields": {
+    "name": "Zero-Waste"
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 7,
+  "fields": {
+    "name": "Cycling"
+  }
+},
+{
+  "model": "Login_SignUp.userprofile",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "busam"
+    ],
+    "city": "Windsor",
+    "country": "Canada",
+    "profileImage": "profile-images/working_penguin_6kdaPfa.gif",
+    "eventInterested": 5
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 33,
+  "fields": {
+    "event": 31,
+    "user": [
+      "busam"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "gireesh.chandra1999@hotmail.com",
+    "phone_number": "5199812850"
+  }
+},
+{
+  "model": "userhistory.userhistory",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "busam"
+    ],
+    "path": "main_page",
+    "visit_count": 3,
+    "date": "2024-07-26"
+  }
+},
+{
+  "model": "userhistory.userhistory",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "busam"
+    ],
+    "path": "profile_view",
+    "visit_count": 4,
+    "date": "2024-07-26"
+  }
+},
+{
+  "model": "userhistory.userhistory",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "busam"
+    ],
+    "path": "logoutPage",
+    "visit_count": 1,
+    "date": "2024-07-26"
+  }
+},
+{
+  "model": "userhistory.userhistory",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "gireesh"
+    ],
+    "path": "main_page",
+    "visit_count": 1,
+    "date": "2024-07-26"
+  }
+},
+{
+  "model": "userhistory.userhistory",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "gireesh"
+    ],
+    "path": "profile_view",
+    "visit_count": 1,
+    "date": "2024-07-26"
+  }
+},
+{
+  "model": "userhistory.userhistory",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "gireesh"
+    ],
+    "path": "logoutPage",
+    "visit_count": 1,
+    "date": "2024-07-26"
+  }
+},
+{
+  "model": "community.post",
+  "pk": 1,
+  "fields": {
+    "title": "Testing Discussions",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "author": [
+      "busam"
+    ],
+    "created_at": "2024-07-22T22:57:27.713Z"
+  }
+},
+{
+  "model": "community.post",
+  "pk": 2,
+  "fields": {
+    "title": "Testing",
+    "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    "author": [
+      "busam"
+    ],
+    "created_at": "2024-07-22T23:09:38.556Z"
+  }
+},
+{
+  "model": "community.post",
+  "pk": 3,
+  "fields": {
+    "title": "pqrst",
+    "content": "pqrst",
+    "author": [
+      "busam"
+    ],
+    "created_at": "2024-07-22T23:18:26.565Z"
+  }
+}
+]

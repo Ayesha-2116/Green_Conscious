@@ -1,0 +1,77 @@
+body {
+    background-color: #e8f5e9; /* Light green background */
+}
+
+.navbar {
+    background-color: #2e7d32; /* Dark green navbar */
+}
+
+.nav-link {
+    color: #ffffff !important; /* White text for links */
+}
+
+.display-4 {
+    color: #388e3c; /* Main heading color */
+}
+
+.lead {
+    color: #4caf50; /* Subheading color */
+}
+
+.btn-outline-success {
+    border-color: #4caf50;
+    color: #4caf50;
+}
+
+.btn-outline-success:hover {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.carousel-container {
+  position: relative;
+  height: 100vh; /* Initial height set to full viewport */
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  object-fit: cover; /* Ensure images scale to fit container */
+}
+
+.text_navbar {
+    font-family: monospace, sans-serif;
+    font-weight: bolder;
+}
+
+.nav_button {
+    background-color: white !important;
+    color: #4CAF50 !important;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav_button:hover {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}

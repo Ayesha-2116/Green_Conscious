@@ -1,0 +1,56 @@
+.container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 1.2em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #27ae60;
+    border-color: #27ae60;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #229954;
+    border-color: #229954;
+}
+
+.text-muted {
+    color: #7f8c8d;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.gallerybox {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of items */
+    margin-bottom: 20px; /* Add some space at the bottom for better readability */
+    padding: 10px; /* Add padding around gallery */
+}
+
+.imgbox {
+    display: flex; /* Use flexbox for layout */
+    gap: 10px; /* Adjust gap between images */
+    align-items: center; /* Center items vertically */
+    overflow-x: auto; /* Ensure content overflows horizontally */
+}
+
+.imgbox img {
+    max-height: 200px; /* Set a maximum height for all images */
+    width: auto; /* Let the width adjust according to the height */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    border: 2px solid #8a8a80; /* Adjust border color and thickness */
+}

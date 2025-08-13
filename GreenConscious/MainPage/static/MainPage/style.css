@@ -1,0 +1,184 @@
+.container .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.event {
+    background-color: white;
+    /*border: 1px solid #ddd;*/
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.event p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.event strong {
+    color: #333;
+}
+
+.event img {
+    border-radius: 8px;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Pagination styles */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination .step-links {
+    display: inline-block;
+    /*border: 1px solid #ddd;*/
+    padding: 8px 12px;
+}
+
+.pagination .step-links a {
+    color: #4CAF50;
+    text-decoration: none;
+    padding: 4px 8px;
+    margin: 0 2px;
+}
+
+.pagination .step-links .current {
+    font-weight: bold;
+    padding: 4px 8px;
+    margin: 0 2px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination .step-links a:hover,
+.pagination .step-links .current:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.event-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container .main {
+    display: flex;
+}
+.sidebar {
+    width: 200px;
+    margin-right: 20px;
+}
+.content {
+    flex-grow: 1;
+    font-family: "Eras Medium ITC", sans-serif !important;
+    font-weight: bold;
+    background-color: #f9f9f9 !important;
+}
+.event img {
+    max-width: 100%;
+    height: auto;
+}
+
+.input_field{
+    margin-right: 10px;
+    width: 100% !important;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.search_button{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-top: 10px !important;
+    padding: 6px 10px !important;
+    /* margin: 0 5px; */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-form{
+    text-align: center !important;
+    display: flex;
+    align-items: flex-end;
+}
+
+.errorlist {
+    background-color: #cc0638 !important;
+    color: white !important;
+    padding: 10px !important;
+    list-style-type: none !important;
+    border-radius: 5px !important;
+    margin: 10px 0 !important;
+}
+
+.errorlist li {
+    margin: 0 !important;
+}
+
+.event_title {
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.event_detail_heading {
+    color: #4CAF50;
+    font-family: "Eras Medium ITC", sans-serif;
+    font-size: 33px !important;
+    font-weight: bolder;
+    padding: 0 20px 0 !important;
+}
+
+.myevent_heading {
+    color: #4CAF50;
+    font-family: "Eras Medium ITC", sans-serif;
+    font-size: 33px !important;
+    font-weight: bolder;
+    padding: 0 20px 0 0 !important;
+}
+
+.search_button:hover {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}

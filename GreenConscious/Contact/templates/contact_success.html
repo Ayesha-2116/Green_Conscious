@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+{% endblock %}
+
+{% block navbar-content%}
+    <a href="{% url 'MainPage:main_page' %}">
+        <div class="name">Green Conscious</div>
+    </a>
+    <div class="login-register">
+        <a href="{% url 'MainPage:main_page' %}">
+            <button>Home</button>
+        </a>
+         <a href="{% url 'Login_SignUp:logoutPage' %}">
+            <button>Log Out</button>
+        </a>
+    </div>
+{%  endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="content">
+        <div class="heading">Thank You!</div>
+        <p>Thank you for reaching out to us. We will get back to you soon.</p>
+        <a href="{% url 'contact_form' %}" class="btn btn-primary">Back to Contact Form</a>
+    </div>
+</div>
+{% endblock %}

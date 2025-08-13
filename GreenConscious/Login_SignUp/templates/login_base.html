@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/login_signup_styles.css">
+    <title>
+        {% block title%}
+        title_from_the_login_or_signup_page
+        {% endblock %}
+    </title>
+    <style>
+        .errorlist {
+            color: red;
+        }
+
+        .navbar-heading {
+            background-color: #4CAF50;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            text-decoration: none;
+            height: 35px;
+        }
+
+        .navbar-heading a {
+            text-decoration: none;
+        }
+
+        .navbar-heading .name {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+{% block body_content %}
+{% endblock %}
+
+</html>

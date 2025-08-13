@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock %}
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+{% endblock %}
+
+{% block navbar-content%}
+    <a href="{% url 'MainPage:main_page' %}">
+        <div class="name">Green Conscious</div>
+    </a>
+    <div class="login-register">
+        <a href="{% url 'MainPage:main_page' %}">
+            <button>Home</button>
+        </a>
+         <a href="{% url 'Login_SignUp:logoutPage' %}">
+            <button>Log Out</button>
+        </a>
+    </div>
+{%  endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <span class="text-muted">Our Story</span>
+                    <div class="heading">About Us</div>
+                    <p class="lead">Welcome to Green Conscious, where passion meets purpose. </p>
+                    <br>
+                    <a href="{% url 'contact_form' %}" class="btn btn-primary">Contact Us</a>
+                </div>
+                <div class="col-md-6 offset-md-1">
+                    <p class="lead">Our platform is dedicated to promoting sustainability through the power of community engagement. Here, you can discover and participate in events that champion green technologies, connect with like-minded individuals, and contribute to a more sustainable future.</p>
+                    <p class="lead">The idea for Green Conscious sprouted for the environment and a shared frustration with the lack of accessible information about local green initiatives. It is envisioned as a place where anyone, regardless of background or expertise, could find events, workshops, and projects focused on clean energy, recycling, conservation, and more. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="gallerybox">
+    <div class="imgbox">
+        <img src="{% static 'images/image1.jpg' %}" alt="" width="300" height="200">
+        <img src="{% static 'images/image2.png' %}" alt="" width="300" height="200">
+        <img src="{% static 'images/image3.jpg' %}" alt="" width="300" height="200">
+        <img src="{% static 'images/image4.jpg' %}" alt="" width="300" height="200">
+        <img src="{% static 'images/image5.png' %}" alt="" width="300" height="200">
+        <img src="{% static 'images/image6.png' %}" alt="" width="300" height="200">
+        <img src="{% static 'images/image7.jpg' %}" alt="" width="300" height="200">
+        <img src="{% static 'images/image8.png' %}" alt="" width="300" height="200">
+    </div>
+</div>
+
+{% endblock %}

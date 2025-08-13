@@ -1,0 +1,218 @@
+{% extends 'base.html' %}
+
+{% block title %}Volunteer Matching{% endblock %}
+
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'MainPage/style.css' %}">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .form-section {
+            width: 100%;
+        }
+
+        .results-section {
+            width: 100%;
+        }
+
+        .event-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+        }
+
+        .back-button:hover {
+            background-color: white;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+        }
+
+        .heading {
+            color: #4CAF50;
+            font-family: "Eras Medium ITC", sans-serif;
+            font-size: 33px !important;
+            font-weight: bolder;
+            padding: 20px 20px 0 !important;
+        }
+
+        form {
+            padding: 10px 20px !important;
+        }
+
+        .left {
+            width: 40%;
+            padding: 10px;
+            background-color: transparent;
+            border-radius: 8px 0 0 8px;
+            vertical-align: top; /* Align content to the top */
+            /* position: sticky; */
+            top: 0;
+            height: fit-content; /* Ensure the column doesn't take the full height */
+        }
+
+        .right {
+            width: 60%;
+            padding: 10px;
+            background-color: transparent;
+            border-radius: 0 8px 8px 0;
+            vertical-align: top; /* Align content to the top */
+        }
+
+        table {
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling for event list */
+        .event {
+            margin-bottom: 20px;
+            /* border: 1px solid #ddd; */
+            border-radius: 8px;
+            padding: 15px;
+            background-color: transparent;
+        }
+
+        .event-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .event-header img.profile-img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .event-header .event-info {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .event-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .event-time {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .event img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .match_button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+        }
+    </style>
+{% endblock %}
+
+{% block navbar-content %}
+    <a href="{% url 'MainPage:main_page' %}">
+        <div class="name">Green Conscious</div>
+    </a>
+    <div class="login-register">
+        <a href="{% url 'Login_SignUp:profile_view' %}">
+            <button>My Profile</button>
+        </a>
+        <a href="{% url 'MainPage:main_page' %}">
+            <button>Home</button>
+        </a>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <table style="width: 100%; border-spacing: 20px;">
+            <tr>
+                <td class="left">
+                    <div class="form-section">
+                        <h1 class="heading">Volunteer Matching</h1>
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button type="submit" class="btn btn-primary match_button">Match</button>
+                        </form>
+                    </div>
+                </td>
+
+                <td class="right">
+                    <div class="results-section">
+                        {% if matched_events %}
+                            <div style="padding: 0 20px"><h2 class="heading">Matched Events</h2></div>
+                            <ul>
+                                {% for event in matched_events %}
+                                    {% with event.created_by.userprofile.profileImage as profile_image %}
+                                        <div class="event">
+                                            <div class="event-header">
+                                                {% if profile_image %}
+                                                    <img src="{{ profile_image.url }}"
+                                                         alt="{{ event.created_by.username }}" class="profile-img">
+                                                {% else %}
+                                                    <img src="{% static 'default-profile.jpg' %}" alt="Default Profile"
+                                                         class="profile-img">
+                                                {% endif %}
+                                                <div class="event-info">
+                                                    <div class="event-title">{{ event.created_by.username }}</div>
+                                                    <div class="event-time">{{ event.start_date }}</div>
+                                                </div>
+                                            </div>
+                                            <a class="event_title"
+                                               href="{% url 'MainPage:event_detail' event.id %}">{{ event.name }}</a>
+                                            <p><strong>Description:</strong> {{ event.description }}</p>
+                                            {% if event.image %}
+                                                <img src="{{ event.image.url }}" alt="{{ event.name }}">
+                                            {% endif %}
+                                            <p><strong>Category:</strong> {{ event.category }}</p>
+                                            <p><strong>Location:</strong> {{ event.location }}</p>
+                                        </div>
+                                    {% endwith %}
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+{% endblock %}

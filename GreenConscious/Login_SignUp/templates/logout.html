@@ -1,0 +1,21 @@
+{% extends 'login_base.html' %}
+
+{% block title %}
+    Green Conscious - Logout
+{% endblock %}
+
+
+{% block body_content %}
+    <body class="logout-body">
+    <div class="container">
+        <div class="message">
+        <p>You have been logged out. You will be redirected to the home page shortly.</p>
+        </div>
+        <script>
+            setTimeout(function() {
+                window.location.href = "{% url 'Login_SignUp:homePage' %}";
+            }, 2000);
+        </script>
+    </div>
+    </body>
+{% endblock %}

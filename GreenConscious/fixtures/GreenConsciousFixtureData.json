@@ -1,0 +1,992 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$mpWlKfsh5lZj4jiMJ2ve4r$NQpWOcKUV4sfOT88ilukcmWSZamVwtkuNqYe1+VN1xE=",
+    "last_login": "2024-07-17T02:18:31.038Z",
+    "is_superuser": true,
+    "username": "busam",
+    "first_name": "",
+    "last_name": "",
+    "email": "busam@uwindsor.ca",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-06-30T18:18:05.033Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$IBcw9vkB6MPYFRg0jmnhcF$jItmNBtU7FVGpWA7iLnXAOtkQ+XXs3JLrgHg+ZZ7Smo=",
+    "last_login": "2024-07-17T02:17:45.260Z",
+    "is_superuser": false,
+    "username": "gireesh",
+    "first_name": "",
+    "last_name": "",
+    "email": "busam@uwindsor.ca",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-07-15T16:57:41.561Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1g32dviv0c2fjcv4ksf1ljo0bslnzk3z",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyELFNd69N5vIAu7SNXQpLQn47_bJj3oaZJ5b-atAq1LCWuTOYysrsqp028XKT2l7oAfVO-TTlNd5jHqXdEHbXqYWF63w_07KNTKtvaRup4YiU0GRjxn7LwIuuS3yHSxhJAM9uBi9g4jWw8gQB7Johj1-QL-JTgr:1sTmXu:RIVZISj1ZIrE2LtNMslY66b8fy5WA5gGOVeHyI65x3w",
+    "expire_date": "2024-07-30T18:05:02.175Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "cnhqc4wtml2aurj253z577cm9lnqlv02",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sNz86:2qTUhBy77rZXudWBTWbLTNFymDBDdncyrmqPcMm7VA0",
+    "expire_date": "2024-07-14T18:18:26.206Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "d69npcaa93uh3f1o7r4ler952hc3t9pr",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyELFNd69N5vIAu7SNXQpLQn47_bJj3oaZJ5b-atAq1LCWuTOYysrsqp028XKT2l7oAfVO-TTlNd5jHqXdEHbXqYWF63w_07KNTKtvaRup4YiU0GRjxn7LwIuuS3yHSxhJAM9uBi9g4jWw8gQB7Johj1-QL-JTgr:1sTnPk:MkJDmzcEk316_3qmovWuLtl8T3VNR6MghLOE5yPbR7k",
+    "expire_date": "2024-07-30T19:00:40.091Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "e96vyelpg148zqqgcald06nnrkueo3ye",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sTP4r:BgB0yw-RGR_w38dmv9odPlRnWHelCL4HFTLwc-nGG4A",
+    "expire_date": "2024-07-29T17:01:29.581Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "hzi5qn0w6qau3jgv9mo4tvcqk7uc7ia8",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sTPzW:HJCfCNT_NPEQ9IflI8mUQUdic3_hVpcW173fXweW3pU",
+    "expire_date": "2024-07-29T18:00:02.047Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kdwhmqr5ad1ly32zj24t309lz3zs48g1",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sTm6X:SRJLEvEz1zcDMVGM7TGRQUD_-NzA-rGYhbuuQyTJPS8",
+    "expire_date": "2024-07-30T17:36:45.759Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "o4ft5i3b4bf19vxu62m55tocok37dbjq",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sQvzU:WX56OrUJBANnU5JtsyGBe7b-wR-_AHBCSjSw6YOEWLI",
+    "expire_date": "2024-07-22T21:33:44.038Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "oaeie3y1nruiwfyukioclpp7ezdumjhj",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sRXNb:qW37r6X6H0Rst0X96Mo-yPeft9kqFqrH2P4MpoqoVf8",
+    "expire_date": "2024-07-24T13:29:07.740Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "r010q14qa89kj5fgolzbmz99o53rkyx9",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sTuFT:aoo5nhTQMdGKqbQc0r5k39EFFYySB_9Hx2qseykZ7D8",
+    "expire_date": "2024-07-31T02:18:31.112Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "x5qp2e1mfd25orx4yt8r5zjnmy0i5rqo",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyELFNd69N5vIAu7SNXQpLQn47_bJj3oaZJ5b-atAq1LCWuTOYysrsqp028XKT2l7oAfVO-TTlNd5jHqXdEHbXqYWF63w_07KNTKtvaRup4YiU0GRjxn7LwIuuS3yHSxhJAM9uBi9g4jWw8gQB7Johj1-QL-JTgr:1sTuEj:UElrORfQrAVHv-zNbSsIafOfMPb-hx7V9nX2NcPnWbk",
+    "expire_date": "2024-07-31T02:17:45.357Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xcg6wb5bksoi2u3fd0gkstgaf1numljf",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sTP8i:y03UEIroO9TzvYcKNthTaNLtXhiqcq5lFHPZOYeNFE4",
+    "expire_date": "2024-07-29T17:05:28.059Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ye81zx4io5jmf29shw0tp2fdjedys0ww",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9O0FHqLS_d-A7kvBDVtQmFl_HclYaHbMzPnZQbc1mnYqi7DLOZsvDn9boT80LwDuWO-Fcslr8tMdlfsQau9FtHn5XD_Dias07fuuzi2ETk00BA7BiB0LQSM0kWn2qaYBGLqBDiw9ykoeaQexiDkRM37A9fzOAY:1sTPgf:cvWEHCFpODVKWeBIgpzOhAl9rwohcthNRKy1iSsBdjQ",
+    "expire_date": "2024-07-29T17:40:33.549Z"
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 2,
+  "fields": {
+    "name": "8th July",
+    "start_date": "2024-08-01",
+    "end_date": "2024-08-02",
+    "description": "8th July_testing event",
+    "created_by": [
+      "busam"
+    ],
+    "image": "",
+    "location": "Windsor, ON",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 3,
+  "fields": {
+    "name": "8th July_1",
+    "start_date": "2024-09-01",
+    "end_date": "2024-10-01",
+    "description": "testing",
+    "created_by": [
+      "busam"
+    ],
+    "image": "",
+    "location": "Windsor, ON",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 4,
+  "fields": {
+    "name": "8th July_2",
+    "start_date": "2024-10-01",
+    "end_date": "2024-10-08",
+    "description": "testing description",
+    "created_by": [
+      "busam"
+    ],
+    "image": "",
+    "location": "Windsor, ON",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 5,
+  "fields": {
+    "name": "8th July_2",
+    "start_date": "2024-10-01",
+    "end_date": "2024-10-08",
+    "description": "testing description",
+    "created_by": [
+      "busam"
+    ],
+    "image": "",
+    "location": "Windsor, ON",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 7,
+  "fields": {
+    "name": "testing_8th july_1",
+    "start_date": "2024-01-01",
+    "end_date": "2024-01-01",
+    "description": "pqrst",
+    "created_by": [
+      "busam"
+    ],
+    "image": "",
+    "location": "Windsor, ON",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 8,
+  "fields": {
+    "name": "Testing_8",
+    "start_date": "2024-12-01",
+    "end_date": "2024-12-08",
+    "description": "Testing Description",
+    "created_by": [
+      "busam"
+    ],
+    "image": "",
+    "location": "Windsor, ON",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 9,
+  "fields": {
+    "name": "New Event",
+    "start_date": "2024-12-08",
+    "end_date": "2024-12-15",
+    "description": "Testing",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "",
+    "location": "Windsor, ON",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 10,
+  "fields": {
+    "name": "sdf",
+    "start_date": "2024-12-01",
+    "end_date": "2024-12-01",
+    "description": "sdf",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "",
+    "location": "Windsor, ON",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 11,
+  "fields": {
+    "name": "sdf",
+    "start_date": "2024-11-01",
+    "end_date": "2024-11-01",
+    "description": "sdf",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "",
+    "location": "Windsor, ON",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 12,
+  "fields": {
+    "name": "Event with image",
+    "start_date": "2024-12-01",
+    "end_date": "2024-12-01",
+    "description": "sdf",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "",
+    "location": "Windsor, Ontario",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 13,
+  "fields": {
+    "name": "Events w img",
+    "start_date": "2024-11-01",
+    "end_date": "2024-11-01",
+    "description": "testing",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "event_images/menu.png",
+    "location": "Windsor, Ontario",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 14,
+  "fields": {
+    "name": "Events w imgage",
+    "start_date": "2024-11-01",
+    "end_date": "2024-11-08",
+    "description": "Testing Description",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "event_images/menu_TfAbAsn.png",
+    "location": "Windsor, Ontario",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 15,
+  "fields": {
+    "name": "sdf",
+    "start_date": "2024-12-01",
+    "end_date": "2024-12-08",
+    "description": "sdf",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "",
+    "location": "Windsor, Ontario",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 16,
+  "fields": {
+    "name": "New Event 15th July",
+    "start_date": "2024-10-20",
+    "end_date": "2024-10-21",
+    "description": "New Event 15th July Description",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "event_images/menu_9SlCoXk.png",
+    "location": "Windsor, Ontario",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 17,
+  "fields": {
+    "name": "Event_new_15th July",
+    "start_date": "2024-11-08",
+    "end_date": "2024-11-09",
+    "description": "Event_new_15th July Description",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "",
+    "location": "Windsor, Ontario",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 18,
+  "fields": {
+    "name": "Event with category",
+    "start_date": "2024-11-01",
+    "end_date": "2024-11-01",
+    "description": "testing description",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "event_images/menu_tqQE0pJ.png",
+    "location": "Windsor, Ontario",
+    "category": 1
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 19,
+  "fields": {
+    "name": "EWC",
+    "start_date": "2024-12-01",
+    "end_date": "2024-12-01",
+    "description": "Testing Description",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "",
+    "location": "Windsor, ON",
+    "category": 2
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 20,
+  "fields": {
+    "name": "EWC1",
+    "start_date": "2024-12-01",
+    "end_date": "2024-12-01",
+    "description": "Testing Description",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "",
+    "location": "Windsor, ON",
+    "category": 3
+  }
+},
+{
+  "model": "MainPage.event",
+  "pk": 21,
+  "fields": {
+    "name": "event_16th July",
+    "start_date": "2024-10-01",
+    "end_date": "2024-11-01",
+    "description": "Testing Description",
+    "created_by": [
+      "gireesh"
+    ],
+    "image": "event_images/menu_PSHAL86.png",
+    "location": "Ottawa",
+    "category": 5
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 1,
+  "fields": {
+    "name": "Green Living"
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 2,
+  "fields": {
+    "name": "Climate Change"
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 3,
+  "fields": {
+    "name": "Wildlife Protection"
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 4,
+  "fields": {
+    "name": "Tree Plantation"
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 5,
+  "fields": {
+    "name": "Renewable Energy"
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 6,
+  "fields": {
+    "name": "Zero-Waste"
+  }
+},
+{
+  "model": "MainPage.eventcategory",
+  "pk": 7,
+  "fields": {
+    "name": "Cycling"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 1,
+  "fields": {
+    "event": 5,
+    "user": [
+      "busam"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+123456789"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 2,
+  "fields": {
+    "event": 7,
+    "user": [
+      "busam"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+12345678"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 3,
+  "fields": {
+    "event": 2,
+    "user": [
+      "busam"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+1234567890"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 4,
+  "fields": {
+    "event": 2,
+    "user": [
+      "busam"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+1234567890"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 5,
+  "fields": {
+    "event": 2,
+    "user": [
+      "busam"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+1234567890"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 6,
+  "fields": {
+    "event": 3,
+    "user": [
+      "busam"
+    ],
+    "name": "Gireesh",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+123456789"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 7,
+  "fields": {
+    "event": 8,
+    "user": [
+      "busam"
+    ],
+    "name": "Gireesh Chandra",
+    "email": "gireesh.chandra@uwindsor.ca",
+    "phone_number": "+123455677890"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 8,
+  "fields": {
+    "event": 2,
+    "user": [
+      "busam"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+123456789"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 9,
+  "fields": {
+    "event": 2,
+    "user": [
+      "busam"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+123456789"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 10,
+  "fields": {
+    "event": 2,
+    "user": [
+      "gireesh"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+123456789"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 11,
+  "fields": {
+    "event": 3,
+    "user": [
+      "busam"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+123455677890"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 12,
+  "fields": {
+    "event": 4,
+    "user": [
+      "gireesh"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+123455677890"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 13,
+  "fields": {
+    "event": 7,
+    "user": [
+      "gireesh"
+    ],
+    "name": "Gireesh",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+1234567890"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 14,
+  "fields": {
+    "event": 2,
+    "user": [
+      "gireesh"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+123455677890"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 15,
+  "fields": {
+    "event": 14,
+    "user": [
+      "gireesh"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+123456789"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 17,
+  "fields": {
+    "event": 13,
+    "user": [
+      "gireesh"
+    ],
+    "name": "sdf",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "testing"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 18,
+  "fields": {
+    "event": 15,
+    "user": [
+      "gireesh"
+    ],
+    "name": "test",
+    "email": "testing@uwindsor.ca",
+    "phone_number": "test"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 19,
+  "fields": {
+    "event": 15,
+    "user": [
+      "gireesh"
+    ],
+    "name": "pqrst",
+    "email": "pqrst@uwindsor.ca",
+    "phone_number": "+123456789"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 20,
+  "fields": {
+    "event": 13,
+    "user": [
+      "gireesh"
+    ],
+    "name": "yo",
+    "email": "yo@uwindsor.ca",
+    "phone_number": "+123455677890"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 21,
+  "fields": {
+    "event": 17,
+    "user": [
+      "gireesh"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "+123456789"
+  }
+},
+{
+  "model": "EventsPage.eventregistration",
+  "pk": 22,
+  "fields": {
+    "event": 21,
+    "user": [
+      "gireesh"
+    ],
+    "name": "Gireesh Chandra Busam",
+    "email": "busam@uwindsor.ca",
+    "phone_number": "5199812850"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-07-08T22:09:24.451Z",
+    "user": [
+      "busam"
+    ],
+    "content_type": [
+      "MainPage",
+      "event"
+    ],
+    "object_id": "1",
+    "object_repr": "Testing",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-07-08T22:12:56.018Z",
+    "user": [
+      "busam"
+    ],
+    "content_type": [
+      "MainPage",
+      "event"
+    ],
+    "object_id": "6",
+    "object_repr": "testing_8th july",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-07-15T16:57:32.946Z",
+    "user": [
+      "busam"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "gireesh",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-07-15T16:58:01.855Z",
+    "user": [
+      "busam"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "gireesh",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-07-15T17:35:14.545Z",
+    "user": [
+      "busam"
+    ],
+    "content_type": [
+      "MainPage",
+      "event"
+    ],
+    "object_id": "13",
+    "object_repr": "Events w img",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-07-15T17:45:56.410Z",
+    "user": [
+      "busam"
+    ],
+    "content_type": [
+      "EventsPage",
+      "eventregistration"
+    ],
+    "object_id": "16",
+    "object_repr": "EventRegistration object (16)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-07-16T17:38:23.026Z",
+    "user": [
+      "busam"
+    ],
+    "content_type": [
+      "MainPage",
+      "eventcategory"
+    ],
+    "object_id": "1",
+    "object_repr": "Green Living",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-07-16T17:38:28.950Z",
+    "user": [
+      "busam"
+    ],
+    "content_type": [
+      "MainPage",
+      "eventcategory"
+    ],
+    "object_id": "2",
+    "object_repr": "Climate Change",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-07-16T17:38:34.373Z",
+    "user": [
+      "busam"
+    ],
+    "content_type": [
+      "MainPage",
+      "eventcategory"
+    ],
+    "object_id": "3",
+    "object_repr": "Wildlife Protection",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-07-16T17:38:38.986Z",
+    "user": [
+      "busam"
+    ],
+    "content_type": [
+      "MainPage",
+      "eventcategory"
+    ],
+    "object_id": "4",
+    "object_repr": "Tree Plantation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-07-16T17:38:43.687Z",
+    "user": [
+      "busam"
+    ],
+    "content_type": [
+      "MainPage",
+      "eventcategory"
+    ],
+    "object_id": "5",
+    "object_repr": "Renewable Energy",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-07-16T17:38:48.125Z",
+    "user": [
+      "busam"
+    ],
+    "content_type": [
+      "MainPage",
+      "eventcategory"
+    ],
+    "object_id": "6",
+    "object_repr": "Zero-Waste",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-07-16T17:38:52.381Z",
+    "user": [
+      "busam"
+    ],
+    "content_type": [
+      "MainPage",
+      "eventcategory"
+    ],
+    "object_id": "7",
+    "object_repr": "Cycling",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]

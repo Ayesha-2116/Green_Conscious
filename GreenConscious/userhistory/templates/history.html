@@ -1,0 +1,99 @@
+<!-- userhistory/templates/userhistory/history.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}User History{% endblock %}
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+{% endblock %}
+
+{% block navbar-content %}
+    <a href="{% url 'MainPage:main_page' %}">
+        <div class="name">Green Conscious</div>
+    </a>
+    <div class="login-register">
+        <a href="{% url 'MainPage:main_page' %}">
+            <button>Home</button>
+        </a>
+        <a href="{% url 'Login_SignUp:logoutPage' %}">
+            <button>Log Out</button>
+        </a>
+    </div>
+{% endblock %}
+
+{% block content %}
+  <style>
+    .table-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 70vh;
+    }
+
+    .history-table {
+      width: 60%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 18px;
+      text-align: left;
+    }
+    .history-table th, .history-table td {
+      padding: 12px 15px;
+    }
+    .history-table th {
+      background-color: #45a049;
+      color: #ffffff;
+      text-align: center;
+    }
+    .history-table tr {
+      border-bottom: 1px solid #dddddd;
+    }
+    .history-table tr:nth-of-type(even) {
+      background-color: #f3f3f3;
+    }
+    .history-table tr:last-of-type {
+      border-bottom: 2px solid #45a049;
+    }
+    h1 {
+      text-align: center;
+    }
+    td{
+        text-align: center;
+    }
+     th, td {
+        padding: 15px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+        color: #393838;
+    }
+    td {
+        background-color: #fff;
+        text-align: center;
+    }
+  </style>
+
+  <div class="table-container">
+    <table class="history-table">
+      <thead>
+        <tr>
+          <th>Visit History of User : {{ request.user.username }}</th>
+          <th>No. of Visits</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for history in visit_history %}
+          <tr>
+            <td>{{ history.path }}</td>
+            <td>{{ history.visit_count }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

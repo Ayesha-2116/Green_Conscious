@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Event Update{% endblock %}
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+{% endblock %}
+{% block navbar-content%}
+    <a href="{% url 'MainPage:main_page' %}">
+        <div class="name">Green Conscious</div>
+    </a>
+    <div class="login-register">
+        <a href="{% url 'Login_SignUp:profile_view' %}">
+            <button>My Profile</button>
+        </a>
+        <a href="{% url 'MainPage:main_page' %}">
+            <button>Home</button>
+        </a>
+    </div>
+{%  endblock %}
+
+
+{% block content %}
+    <div class="container-fluid background">
+        <div class="content event_create_form">
+            <div class="heading">Event Details Update</div>
+            <form action="{% url 'MainPage:event_details_update' event_id=given_event_id%}" method="post" 
+                  enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn back_button">Update My Event Details</button>
+                <a href="{% url 'MainPage:event_detail' event_id=given_event_id%}"
+                   class="btn btn-primary back_button">Back to Event Details</a>
+            </form>
+            <br>
+
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'login_base.html' %}
+{% block title %}
+    Green Conscious - Login
+{% endblock %}
+
+{% block body_content %}
+<body class="login-body">
+    <div class="navbar-heading">
+        <a href="{% url 'MainPage:main_page' %}">
+            <div class="name">Green Conscious</div>
+        </a>
+    </div>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="{% url 'Login_SignUp:loginPage' %}" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p>Don't have an account? <a href="{% url 'Login_SignUp:signupPage' %}">Sign up here</a></p>
+        <p>Forgot Your Password? <a href="{% url 'Login_SignUp:passwordreset' %}">Reset Here</a></p>
+        {% if invalidMessage %}
+            <p style="color: red">{{ invalidMessage }}</p>
+        {% endif %}
+    </div>
+</body>
+{% endblock %}

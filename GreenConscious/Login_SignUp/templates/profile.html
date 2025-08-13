@@ -1,0 +1,134 @@
+<!-- profile.html -->
+{% load static %}  <!-- Load static tag library -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" type="text/css" href="../../static/profilestyle.css">
+    <style>
+        .sidenav {
+          height: 40%;
+          width: 300px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #81c784;
+          overflow-x: hidden;
+          padding-top: 20px;
+          margin-top : 200px;
+          margin-left : 20px;
+          border-radius: 10px;
+        }
+
+        .sidenav a {
+          padding: 15px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #555555;
+          display: block;
+        }
+
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+
+        .navbar-heading {
+            background-color: #4CAF50;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            text-decoration: none;
+            height: 35px;
+        }
+
+        .navbar-heading a {
+            text-decoration: none;
+        }
+
+        .navbar-heading .name {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .button {
+              display: inline-block;
+              padding: 10px 5px;
+              font-size: 14px;
+              color: white;
+              background-color: #4CAF50;
+              text-align: center;
+              text-decoration: none;
+              border-radius: 3px;
+              transition: background-color 0.3s;
+            }
+
+            .button:hover {
+              background-color: #45a049;
+            }
+    </style>
+
+</head>
+<body>
+    <div class="navbar-heading">
+        <a href="{% url 'MainPage:main_page' %}">
+            <div class="name">Green Conscious</div>
+        </a>
+    </div>
+    <div class="sidenav">
+          <a href="{% url 'MainPage:main_page' %}">Home</a>
+          <a href="{% url 'MainPage:myevents' %}">My Events</a>
+          <a href="{% url 'Login_SignUp:change_password' %}">Change Password</a>
+        <a href="{% url 'Login_SignUp:logoutPage' %}">Logout</a>
+    </div>
+
+    <div class="container">
+        <div class="container1">
+            <div class="profile-heading">
+                <h1>User Profile</h1>
+                <p>Welcome, {{ userDetails.username }}</p>
+                <p>Email: {{ userDetails.email }}</p>
+            </div>
+            <div class="profile-image">
+                {% if userProfile %}
+                    {% if userProfile.profileImage %}
+                        <img src="{{ userProfile.profileImage.url }}" alt="Profile Image">
+                    {% else %}
+                        <img src="/media/profile-images/default-profile-photo.png" alt="Profile Image">
+                    {% endif %}
+                {% else %}
+                        <img src="/media/profile-images/default-profile-photo.png" alt="Profile Image">
+                {% endif %}
+
+            </div>
+        <a href="{% url 'user_history' %}" class="button">User History</a>
+        </div>
+        <div class="container2">
+            <div class="profile-details">
+                {% if userDetails %}
+                    <form action="{% url 'Login_SignUp:profile_view'  %}" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <input type="submit" value="Save Profile">
+                    </form>
+                {% else %}
+                    <!-- Display form for the first time entry -->
+                    <form action="{% url 'Login_SignUp:profile_view' %}" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <input type="submit" value="Create Profile">
+                    </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
